@@ -4,7 +4,7 @@ package gl.lab3.q2;
 import java.io.*;
 import java.util.*;
 
-//A binary tree node
+
 class Node {
 
  int data;
@@ -19,24 +19,24 @@ class Node {
 
 class BinarySearchTree {
 
- // Root of BST
+
  Node root;
 
- // Constructor
+
  BinarySearchTree() { root = null; }
  void insert(int key) { root = insertRec(root, key); }
 
- /* A recursive function to insert a new key in BST */
+
  Node insertRec(Node root, int data)
  {
 
-     /* If the tree is empty, return a new node */
+  
      if (root == null) {
          root = new Node(data);
          return root;
      }
 
-     /* Otherwise, recur down the tree */
+  
      if (data < root.data)
          root.left = insertRec(root.left, data);
      else if (data > root.data)
@@ -93,6 +93,9 @@ class BinarySearchTree {
     tree.insert(j);}
      System.out.println("ENTER THE REQUIRED SUM (INT)");
      */ 
+	 
+	 
+	 
       tree.insert(40);
       tree.insert(20);
       tree.insert(60);
